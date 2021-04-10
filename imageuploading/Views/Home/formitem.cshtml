@@ -1,0 +1,26 @@
+﻿
+@model imageuploading.Models.ItemImage
+
+<div>
+    resim upload sayfası
+
+
+    <form action="/Home/formitem/" method="post" enctype="multipart/form-data">
+     
+
+
+        <div>
+            <label>name:</label>
+            <input type="text" name="Name" value="" />
+            <hr />
+            <label>url</label>
+            <input type="text" name="Url" value="" />
+
+        </div>
+
+        <button type="submit">gönder</button>
+
+
+    </form>
+
+</div>

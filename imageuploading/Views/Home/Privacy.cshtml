@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "image  upload";
+}
+@model imageuploading.Models.ItemImage
+
+<div>
+    resim upload sayfası
+
+
+    <form action="/Home/Privacy/" method="post" enctype="multipart/form-data"><!--file upload için enctype bu şekilde olmalı-->
+
+
+        <div>
+
+            <input type="hidden" asp-for="Url"/>
+
+
+            <input type="file" name="file"  />
+
+        </div>
+
+        <button type="submit">gönder</button>
+
+
+    </form>
+
+</div>
